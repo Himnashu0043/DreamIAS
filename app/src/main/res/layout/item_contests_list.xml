@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/round_stroke_8dp_black"
+    app:cardCornerRadius="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:paddingVertical="6dp"
+            android:text="IAS-Geography Full length Test"
+            android:textColor="@color/textBlackSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/tvEntry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEntry"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Entry : "
+            android:textColor="@color/textBlackSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toStartOf="@id/tvEntryFee"
+            app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
+
+        <TextView
+            android:id="@+id/tvEntryFee"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="top"
+            android:text="@string/_20"
+            android:textColor="@color/text_green"
+            app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
+
+        <TextView
+            android:id="@+id/tvOfferPrice"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/green_round_drawable"
+            android:drawablePadding="4dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="2dp"
+            android:text="₹15"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="10dp"
+            android:text="₹10 Lakh"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="4dp"
+            android:progress="40"
+            app:circularflow_radiusInDP="2dp"
+            app:indicatorColor="@color/colorSecondary"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+            app:trackColor="#DFDFFF"
+            app:trackCornerRadius="3dp" />
+
+        <TextView
+            android:id="@+id/tvSpotLeft"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicator" />
+
+        <TextView
+            android:id="@+id/tvSpotCount"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="top"
+            android:textColor="#939393"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicator" />
+
+
+        <LinearLayout
+
+            style="@style/normaltxt_10sp_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorVariantHighlight"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSpotCount">
+
+            <TextView
+                android:id="@+id/tvBottomPrice"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/trophy"
+                android:drawablePadding="4dp"
+                android:drawableTint="#00527D"
+                android:gravity="top"
+                android:textColor="#00527D" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvBottomQuestion"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="4dp"
+                android:drawableTint="#00527D"
+                android:gravity="top"
+                android:textColor="#00527D"
+                app:drawableStartCompat="@drawable/question_mark" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvBottomTime"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="4dp"
+                android:drawableTint="#00527D"
+                android:gravity="top"
+                android:textColor="#00527D"
+                app:drawableStartCompat="@drawable/clock" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <TextView
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="4dp"
+                android:drawableTint="#00527D"
+                android:gravity="top"
+                android:text="60%"
+                android:textColor="#00527D"
+                app:drawableStartCompat="@drawable/trophy_ranking" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/text_green"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEntryFee"
+            app:layout_constraintEnd_toEndOf="@+id/tvEntryFee"
+            app:layout_constraintStart_toEndOf="@+id/tvEntry"
+            app:layout_constraintTop_toTopOf="@+id/tvEntryFee" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="143dp"
+    android:height="142dp"
+    android:viewportWidth="143"
+    android:viewportHeight="142">
+  <path
+      android:strokeWidth="1"
+      android:pathData="M71.5,71m-70.5,0a70.5,70.5 0,1 1,141 0a70.5,70.5 0,1 1,-141 0"
+      android:fillColor="#00000000"
+      android:strokeColor="#F0F0F0"/>
+  <path
+      android:pathData="M54.87,48.08C54.87,38.89 62.35,31.42 71.54,31.42C80.73,31.42 88.2,38.89 88.2,48.08C88.2,57.28 80.73,64.75 71.54,64.75C62.35,64.75 54.87,57.28 54.87,48.08ZM79.83,73.08H63.17C46.25,73.08 40.25,85.47 40.25,96.08C40.25,105.57 45.3,110.58 54.85,110.58H88.15C97.7,110.58 102.75,105.57 102.75,96.08C102.75,85.47 96.75,73.08 79.83,73.08Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="43.17"
+          android:startY="36.75"
+          android:endX="105.52"
+          android:endY="45.25"
+          android:type="linear">
+        <item android:offset="0" android:color="#24A4B5"/>
+        <item android:offset="1" android:color="#00527D"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M122.5,106L122.5,106A16,16 0,0 1,138.5 122L138.5,122A16,16 0,0 1,122.5 138L122.5,138A16,16 0,0 1,106.5 122L106.5,122A16,16 0,0 1,122.5 106z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="107.99"
+          android:startY="108.15"
+          android:endX="139.57"
+          android:endY="113.61"
+          android:type="linear">
+        <item android:offset="0" android:color="#24A4B5"/>
+        <item android:offset="1" android:color="#00527D"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M128.33,121.17H123.33V116.17C123.33,115.71 122.96,115.33 122.5,115.33C122.04,115.33 121.67,115.71 121.67,116.17V121.17H116.67C116.21,121.17 115.83,121.54 115.83,122C115.83,122.46 116.21,122.83 116.67,122.83H121.67V127.83C121.67,128.29 122.04,128.67 122.5,128.67C122.96,128.67 123.33,128.29 123.33,127.83V122.83H128.33C128.79,122.83 129.17,122.46 129.17,122C129.17,121.54 128.79,121.17 128.33,121.17Z"
+      android:fillColor="#ffffff"/>
+</vector>

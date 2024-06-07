@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home_selector"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menuMyContests"
+        android:icon="@drawable/my_contests_selector"
+        android:title="My Tests" />
+    <item
+        android:id="@+id/menuNewSub"
+        android:title="" />
+    <item
+        android:id="@+id/menuMyTests"
+        android:icon="@drawable/my_tests_selector"
+        android:title="Practice Tests" />
+
+    <item
+        android:id="@+id/menuSubscription"
+        android:icon="@drawable/profile_bottom_selector"
+        android:title="Profile" />
+</menu>

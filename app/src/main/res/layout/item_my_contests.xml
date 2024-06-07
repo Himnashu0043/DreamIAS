@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E4F6FF"
+    android:background="@drawable/round_stroke_8dp_light_blue"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textBlackSecondary"
+            android:background="@drawable/custom_drawable"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:paddingVertical="6dp"
+            android:text="IAS-Geography Full length Test"
+            app:layout_constraintEnd_toStartOf="@id/tvContestCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvContestCount"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:drawableTint="@color/colorSecondary"
+            android:textColor="@color/colorSecondary"
+            android:drawableStart="@drawable/contests"
+            android:drawablePadding="4dp"
+            android:text="3 Contests"
+            app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
+
+        <TextView
+            android:id="@+id/tvTimeLeft"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/time_left_drawable"
+            android:drawablePadding="4dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="47m 06s"
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintEnd_toStartOf="@id/tvTime"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="4dp"
+            android:text="Today, 07:00 pm"
+            app:layout_constraintBottom_toBottomOf="@id/tvTimeLeft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTimeLeft"
+            app:layout_constraintTop_toTopOf="@id/tvTimeLeft" />
+
+        <TextView
+            android:id="@+id/tvDesi"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal"
+            android:text="Comprehensive Full length test of Geography"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTimeLeft" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

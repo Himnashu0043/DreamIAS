@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start">
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@+id/rcy"
+            motion:touchAnchorSide="top" />
+
+    </Transition>
+
+    <ConstraintSet>
+
+        <Constraint
+            android:id="@+id/ivStartBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clStart"
+            motion:layout_constraintEnd_toEndOf="@+id/clStart"
+            motion:layout_constraintStart_toStartOf="@+id/clStart"
+            motion:layout_constraintTop_toBottomOf="@+id/clStart" />
+
+        <Constraint
+            android:id="@+id/ivBatchStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clStart"
+            motion:layout_constraintTop_toTopOf="@+id/clStart" />
+
+        <Constraint
+            android:id="@+id/clStart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@id/clMiddle"
+            motion:layout_constraintEnd_toStartOf="@+id/clMiddle"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/clMiddle" />
+
+
+        <Constraint
+            android:id="@+id/ivMiddleBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clMiddle"
+            motion:layout_constraintEnd_toEndOf="@+id/clMiddle"
+            motion:layout_constraintStart_toStartOf="@+id/clMiddle"
+            motion:layout_constraintTop_toBottomOf="@+id/clMiddle" />
+
+
+        <Constraint
+            android:id="@+id/ivBatchMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clMiddle"
+            motion:layout_constraintTop_toTopOf="@+id/clMiddle" />
+
+        <Constraint
+            android:id="@+id/clMiddle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintEnd_toStartOf="@id/clEnd"
+            motion:layout_constraintStart_toEndOf="@id/clStart"
+            motion:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <Constraint
+            android:id="@+id/clEnd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toBottomOf="@id/clMiddle"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@id/clMiddle"
+            motion:layout_constraintTop_toTopOf="@id/clMiddle" />
+
+        <Constraint
+            android:id="@+id/ivBatchEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clEnd"
+            motion:layout_constraintTop_toTopOf="@+id/clEnd" />
+
+        <Constraint
+            android:id="@+id/ivEndBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clEnd"
+            motion:layout_constraintEnd_toEndOf="@+id/clEnd"
+            motion:layout_constraintStart_toStartOf="@+id/clEnd"
+            motion:layout_constraintTop_toBottomOf="@+id/clEnd" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+
+        <Constraint
+            android:id="@+id/ivStartBottom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clStart"
+            motion:layout_constraintEnd_toEndOf="@+id/clStart"
+            motion:layout_constraintStart_toStartOf="@+id/clStart"
+            motion:layout_constraintTop_toBottomOf="@+id/clStart" />
+
+        <Constraint
+            android:id="@+id/ivBatchStart"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clStart"
+            motion:layout_constraintTop_toTopOf="@+id/clStart" />
+
+        <Constraint
+            android:id="@+id/clStart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toBottomOf="@id/clMiddle"
+            motion:layout_constraintEnd_toStartOf="@+id/clMiddle"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/clMiddle" />
+
+        <Constraint
+            android:id="@+id/clMiddle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintEnd_toStartOf="@id/clEnd"
+            motion:layout_constraintStart_toEndOf="@id/clStart"
+            motion:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <Constraint
+            android:id="@+id/ivMiddleBottom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clMiddle"
+            motion:layout_constraintEnd_toEndOf="@+id/clMiddle"
+            motion:layout_constraintStart_toStartOf="@+id/clMiddle"
+            motion:layout_constraintTop_toBottomOf="@+id/clMiddle" />
+
+        <Constraint
+            android:id="@+id/ivBatchMiddle"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clMiddle"
+            motion:layout_constraintTop_toTopOf="@+id/clMiddle" />
+
+
+        <Constraint
+            android:id="@+id/clEnd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toBottomOf="@id/clMiddle"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@id/clMiddle"
+            motion:layout_constraintTop_toTopOf="@id/clMiddle" />
+
+        <Constraint
+            android:id="@+id/ivBatchEnd"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            motion:layout_constraintEnd_toEndOf="@+id/clEnd"
+            motion:layout_constraintTop_toTopOf="@+id/clEnd" />
+
+        <Constraint
+            android:id="@+id/ivEndBottom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/clEnd"
+            motion:layout_constraintEnd_toEndOf="@+id/clEnd"
+            motion:layout_constraintStart_toStartOf="@+id/clEnd"
+            motion:layout_constraintTop_toBottomOf="@+id/clEnd" />
+
+    </ConstraintSet>
+
+</MotionScene>

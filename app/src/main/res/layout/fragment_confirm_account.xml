@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:src="@drawable/verify_phone" />
+
+    <TextView
+        style="@style/normaltxt_24sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/confirm_your_account" />
+
+
+    <TextView
+        style="@style/normaltxt_14sp_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="Enter the 4-digit code sent to you at"
+        android:textColor="#85919A" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+919999999999" />
+
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="OTP verification code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etOne"
+            style="@style/normaltxt_16sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_selector"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:textColorHint="#85919A" />
+
+        <EditText
+            android:id="@+id/etTwo"
+            style="@style/normaltxt_16sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:background="@drawable/edit_text_selector"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColorHint="#85919A" />
+
+        <EditText
+            android:id="@+id/etThree"
+            style="@style/normaltxt_16sp_Regular"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_selector"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColorHint="#85919A" />
+
+        <EditText
+            android:id="@+id/etFour"
+            style="@style/normaltxt_16sp_Regular"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_selector"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColorHint="#85919A" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/normaltxt_14sp_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:text="Didn't receive Otp?"
+        android:textColor="#85919A" />
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="You can resend code in 55 s" />
+
+</LinearLayout>

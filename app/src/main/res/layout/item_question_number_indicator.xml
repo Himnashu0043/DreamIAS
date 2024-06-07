@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/normaltxt_14sp_Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/selector_item_quiz_question_number"
+    android:maxLength="2"
+    android:id="@+id/tvNumber"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp"
+    android:text="2" />

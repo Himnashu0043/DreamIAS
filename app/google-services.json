@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595568999860",
+    "project_id": "dreamias-4ad90",
+    "storage_bucket": "dreamias-4ad90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595568999860:android:7a0a41643621bba1e6c6e1",
+        "android_client_info": {
+          "package_name": "com.example.dream_ias"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2mQ6JqtvIb-Gc8UOZ7FMCdO6Hqe2oB1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

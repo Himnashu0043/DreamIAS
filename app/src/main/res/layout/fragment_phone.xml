@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:src="@drawable/profile" />
+
+    <TextView
+        style="@style/normaltxt_24sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/setting_up_your_account" />
+
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/mobile_number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text_selector"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/countryCode"-->
+<!--            style="@style/normaltxt_16sp_Regular"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:drawableEnd="@drawable/arrow_down"-->
+<!--            android:drawablePadding="@dimen/dp_8"-->
+<!--            android:text="+91" />-->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            app:ccp_showFlag="false"
+            app:ccp_showArrow="true"
+            app:ccp_showNameCode="false"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:layout_marginVertical="@dimen/dp_12"
+            android:background="#141416" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/normaltxt_16sp_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:digits="0987654321"
+            android:hint="9999999999"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:textColor="#141416"
+            android:textColorHint="#85919A" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvAlreadyHaveAnAccount"
+        style="@style/normaltxt_16sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:text="Already have account"
+        android:textColor="@color/colorSecondary" />
+
+</LinearLayout>

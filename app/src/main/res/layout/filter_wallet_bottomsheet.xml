@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/extra_bold"
+        android:text="@string/filter"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/btn_close"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="@dimen/_16sdp"-->
+    <!--        android:fontFamily="@font/bold"-->
+    <!--        android:text="@string/close"-->
+    <!--        android:textColor="#FD701E"-->
+    <!--        android:textSize="@dimen/_14ssp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/tv_sort_by"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/tv_sort_by" />-->
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:id="@+id/groupradio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sort_by">
+
+        <RadioButton
+            android:id="@+id/tvLast"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/main_green"
+            android:text="@string/last_week"
+            android:textColor="@color/blue" />
+
+
+        <RadioButton
+            android:id="@+id/tvMonth"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/main_green"
+            android:text="@string/last_month"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/tvYear"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/main_green"
+            android:text="@string/last_year"
+            android:textColor="@color/blue" />
+
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32">
+
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/verify_phone" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:visibility="invisible"
+            style="@style/normaltxt_16sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Skip" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/normaltxt_24sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Enter your details" />
+
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:text="Enter First Name" />
+
+
+    <EditText
+        android:id="@+id/firstName"
+        style="@style/normaltxt_16sp_Regular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/edit_text_selector"
+        android:hint="Type first name"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:paddingHorizontal="12dp"
+        android:inputType="text|textCapWords"
+        android:textColorHint="#85919A" />
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="Enter Last Name" />
+
+
+    <EditText
+        android:id="@+id/lastName"
+        style="@style/normaltxt_16sp_Regular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/edit_text_selector"
+        android:hint="Type last name"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:paddingHorizontal="12dp"
+        android:inputType="text|textCapWords"
+        android:textColorHint="#85919A" />
+
+
+    <TextView
+        style="@style/normaltxt_14sp_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="Enter Email (optional)" />
+
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/normaltxt_16sp_Regular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/edit_text_selector"
+        android:hint="Type email address"
+        android:paddingHorizontal="12dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#85919A" />
+
+
+    </LinearLayout>
+</ScrollView>

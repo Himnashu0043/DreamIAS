@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/leaderboard_motion"
+    tools:context=".activity.leaderBoard.LeaderBoardActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMiddle"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        android:background="@drawable/dark_organge_bg"
+        app:layout_constraintEnd_toStartOf="@id/clEnd"
+        app:layout_constraintStart_toEndOf="@id/clStart"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:id="@+id/ivMain"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/iv_dummy_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivBatchMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/clMiddle"
+        app:layout_constraintTop_toTopOf="@+id/clMiddle"
+        app:srcCompat="@drawable/stiger_award" />
+
+    <ImageView
+        android:id="@+id/ivMiddleBottom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/clMiddle"
+        app:layout_constraintEnd_toEndOf="@+id/clMiddle"
+        app:layout_constraintStart_toStartOf="@+id/clMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/clMiddle"
+        app:srcCompat="@drawable/award_icon" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEnd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        android:background="@drawable/dark_organge_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/clMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clMiddle"
+        app:layout_constraintTop_toTopOf="@+id/clMiddle">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:id="@+id/ivthird"
+            android:visibility="visible"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iv_dummy_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/ivBatchEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/clEnd"
+        app:layout_constraintTop_toTopOf="@+id/clEnd"
+        app:srcCompat="@drawable/stiger_award" />
+
+    <ImageView
+        android:id="@+id/ivEndBottom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/clEnd"
+        app:layout_constraintEnd_toEndOf="@+id/clEnd"
+        app:layout_constraintStart_toStartOf="@+id/clEnd"
+        app:layout_constraintTop_toBottomOf="@+id/clEnd"
+        app:srcCompat="@drawable/award_icon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:visibility="visible"
+        android:background="@drawable/sliver_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/clMiddle"
+        app:layout_constraintEnd_toStartOf="@id/clMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clMiddle">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivSliver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/iv_dummy_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/ivBatchStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/clStart"
+        app:layout_constraintTop_toTopOf="@+id/clStart"
+        app:srcCompat="@drawable/stiger_award" />
+
+    <ImageView
+        android:id="@+id/ivStartBottom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/clStart"
+        app:layout_constraintEnd_toEndOf="@+id/clStart"
+        app:layout_constraintStart_toStartOf="@+id/clStart"
+        app:layout_constraintTop_toBottomOf="@+id/clStart"
+        app:srcCompat="@drawable/sliver_award_icon" />
+
+    <TextView
+        android:id="@+id/textView65"
+        style="@style/normaltxt_14sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="@+id/clStart"
+        app:layout_constraintStart_toStartOf="@+id/clStart"
+        app:layout_constraintTop_toBottomOf="@+id/ivStartBottom" />
+
+    <TextView
+        android:id="@+id/textView66"
+        style="@style/normaltxt_10sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:textColor="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="@+id/textView65"
+        app:layout_constraintStart_toStartOf="@+id/textView65"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <TextView
+        android:id="@+id/textView67"
+        style="@style/normaltxt_14sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#C99100"
+        app:layout_constraintEnd_toEndOf="@+id/clMiddle"
+        app:layout_constraintStart_toStartOf="@+id/clMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/ivMiddleBottom" />
+
+    <TextView
+        android:id="@+id/textView616"
+        style="@style/normaltxt_10sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:textColor="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="@+id/textView67"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView674"
+        style="@style/normaltxt_14sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#C99100"
+        app:layout_constraintEnd_toEndOf="@+id/clEnd"
+        app:layout_constraintStart_toStartOf="@+id/clEnd"
+        app:layout_constraintTop_toBottomOf="@+id/ivEndBottom" />
+
+    <TextView
+        android:id="@+id/textView6164"
+        style="@style/normaltxt_10sp_Regular"
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="@+id/textView674"
+        app:layout_constraintStart_toStartOf="@+id/textView674"
+        app:layout_constraintTop_toBottomOf="@+id/textView674" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView616"
+        tools:itemCount="15"
+        tools:listitem="@layout/leader_board_item" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
